@@ -8,7 +8,8 @@ const GridLayout = styled.div`
 		'main    main   main'
 		'skills   skills   skills'
 		'projects   projects   projects'
-		'contact     contact      contact';
+		'contact     contact      contact'
+		'footer footer footer';
 
 	.nav {
 		grid-area: nav;
@@ -25,6 +26,9 @@ const GridLayout = styled.div`
 	}
 	.contact {
 		grid-area: contact;
+	}
+	.footer {
+		grid-area: footer;
 	}
 `;
 

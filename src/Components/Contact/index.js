@@ -1,15 +1,39 @@
 import {StyledContainer} from './styled';
 import {FaGithub, FaLinkedin} from 'react-icons/fa';
-import {FiExternalLink} from 'react-icons/fi';
+import {FiExternalLink, FiMail} from 'react-icons/fi';
 import {SiGmail} from 'react-icons/si';
-import {IoMdCopy} from 'react-icons/io';
 import img_gmail from '../../assets/perfil.png';
 import img_linkedin from '../../assets/linkedin.png';
 
 const arrayContact = [
-	{image: img_linkedin, text: 'Alonso Diaz Full Stack Developer', },
-	{},
-	{},
+	{
+		icon: SiGmail,
+		image: img_gmail,
+		text: 'alonsodiazlip@gmail.com',
+		action: 'copy',
+		link: 'mailto: alonsodiazlip@gmail.com',
+		inIcon: FiMail,
+		color: '#ca372d',
+	},
+	{
+		icon: FaLinkedin,
+		image: img_linkedin,
+		text: 'Alonso Diaz',
+		text2: 'Full Stack Developer',
+		action: 'link',
+		link: 'https://www.linkedin.com/in/alonsojesusdiaz/',
+		inIcon: FiExternalLink,
+		color: '#0a66c2',
+	},
+	{
+		icon: FaGithub,
+		image: img_gmail,
+		text: '@Alonxx',
+		action: 'link',
+		link: 'https://github.com/Alonxx/',
+		inIcon: FiExternalLink,
+		color: '#1c1c1c',
+	},
 ];
 
 const Contact = () => {
@@ -23,64 +47,30 @@ const Contact = () => {
 				</div>
 				<div className='content'>
 					<div className='div_contact'>
-						<div className='div_icon_gmail'>
-							<SiGmail />
-							<div className='tooltip'>
-								<img className='img_perfil' src={img_gmail} alt='perfil'></img>
-								<span>alonsodiazlip@gmail.com</span>
-								<br />
-								<i>
-									<IoMdCopy
-										onClick={() => {
-											navigator.clipboard.writeText('alonsodiazlip@gmail.com');
-										}}
-									/>
-								</i>
+						{arrayContact.map((el) => (
+							<div className='div_icon'>
+								<el.icon style={{color: el.color}} />
+								<div className='tooltip'>
+									<img
+										className='img_perfil'
+										src={el.image}
+										alt={el.icon}
+									></img>
+									<br />
+									<span>
+										{el.text}
+										<br/>
+										{el.text2 !== null ? el.text2 : null}
+									</span>
+									<br />
+									<i>
+										<a href={el.link} target='_blank' rel='noreferrer'>
+											<el.inIcon />
+										</a>
+									</i>
+								</div>
 							</div>
-						</div>
-						<div className='div_icon_linkedin'>
-							<FaLinkedin />
-							<div className='tooltip'>
-								<img
-									className='img_perfil'
-									src={img_linkedin}
-									alt='perfil'
-								></img>
-								<br />
-								<span>
-									Alonso Diaz
-									<br /> Full Stack Developer
-								</span>
-								<br />
-								<i>
-									<a
-										href='https://www.linkedin.com/in/alonsojesusdiaz/'
-										target='_blank'
-										rel='noreferrer'
-									>
-										<FiExternalLink />
-									</a>
-								</i>
-							</div>
-						</div>
-						<div className='div_icon_github'>
-							<FaGithub />
-							<div className='tooltip'>
-								<img className='img_perfil' src={img_gmail} alt='perfil'></img>
-								<br />
-								<span>@Alonxx</span>
-								<br />
-								<i>
-									<a
-										href='https://github.com/Alonxx/'
-										target='_blank'
-										rel='noreferrer'
-									>
-										<FiExternalLink />
-									</a>
-								</i>
-							</div>
-						</div>
+						))}
 					</div>
 				</div>
 			</StyledContainer>

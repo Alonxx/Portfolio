@@ -1,9 +1,0 @@
-QUE INCLUIR EN EL PORTFOLIO:
-*Nombre completo
-*Metodo de contacto no directo(Formulario, link a redes sociales, entre otros)
-*Incluir trabajo que he realizado hasta ahora
-*Habilidades tecnicas que tengo
-*Habiliades tecnicas que me gustaria aprender o que estoy aprendiendo(1 o 2 no mas de eso)
-*Hobbies que tengo
-*Plantilla para construirlo
-*Dejar un redme en cada github

@@ -12,7 +12,7 @@ export const StyledContainer = styled.div`
 		grid-area: title;
 		justify-self: start;
 		padding-left: 16rem;
-		padding-bottom: 3rem;
+		padding-bottom: 2.5rem;
 	}
 
 	.content {
@@ -36,7 +36,7 @@ export const StyledContainer = styled.div`
 	}
 	.tooltip {
 		border: 1px solid whitesmoke;
-		font-size: 0.6rem;
+		font-size: 0.67rem;
 		visibility: hidden;
 		width: 10rem;
 		background: #fdfeff;
@@ -59,7 +59,8 @@ export const StyledContainer = styled.div`
 			border-radius: 100%;
 		}
 		i {
-			font-size: 0.8rem;
+			font-size: 1rem;
+
 		}
 		a {
 			color: #1c1c1c;
@@ -83,36 +84,78 @@ export const StyledContainer = styled.div`
 		justify-content: space-between;
 		font-size: 3rem;
 		color: #1c1c1c;
-		
-		.div_icon_gmail {
-			color: #ca372d;
+
+		.div_icon {
 			position: relative;
-			cursor: pointer;
 
 			&:hover .tooltip {
 				visibility: visible;
 				opacity: 1;
 			}
 		}
+	}
 
-		.div_icon_linkedin {
-			color: #0a66c2;
-			position: relative;
-			cursor: pointer;
+	@media screen and (max-width: 719px) {
+		padding-top: 4rem;
+		.title {
+			grid-area: title;
+			padding-left: 0;
+			padding-bottom: 0;
+		}
 
-			&:hover .tooltip {
-				visibility: visible;
-				opacity: 1;
+		.div_component_open {
+			margin-left: 0rem;
+			padding-bottom: 3rem;
+			padding-left: 0.5rem;
+			font-size: 2rem;
+			font-weight: 900;
+			color: rgb(225, 170, 99, 1);
+			span {
+				color: rgba(0, 0, 0, 1);
 			}
 		}
-		.div_icon_github {
-			position: relative;
-			cursor: pointer;
-
-			&:hover .tooltip {
-				visibility: visible;
-				opacity: 1;
+		.tooltip {
+			visibility: hidden;
+			font-size: 0.7rem;
+			background: #fdfeff;
+			color: black;
+			text-align: center;
+			border-radius: 6px;
+			padding: 0.5rem 0.1rem 0 0.1rem;
+			position: absolute;
+			z-index: 1;
+			bottom: 115%;
+			left: -113%;
+			opacity: 0;
+			transition: opacity 0.3s;
+			box-shadow: 0 0.091rem 0.227rem rgba(0, 0, 0, 0.075);
+			-webkit-box-shadow: 0 0.091rem 0.227rem rgba(0, 0, 0, 0.075);
+			-moz-box-shadow: 0 0.091rem 0.227rem rgba(0, 0, 0, 0.075);
+			img {
+				width: 2rem;
+				height: auto;
+				border-radius: 100%;
 			}
+			i {
+				font-size: 1.3rem;
+			}
+			a {
+				color: #1c1c1c;
+				text-decoration: none;
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				top: 100%;
+				left: 50%;
+				margin-left: -0.5rem;
+				border-width: 0.5rem;
+				border-style: solid;
+				border-color: #fdfeff transparent transparent transparent;
+			}
+		}
+		.div_contact {
+			width: 12rem;
 		}
 	}
 `;
