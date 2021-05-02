@@ -5,6 +5,11 @@ export const StyledContainer = styled.div`
 		width: 20rem;
 	}
 
+	a {
+		color: ${({theme}) => theme.text};
+		text-decoration: none;
+	}
+
 	.div_project_title {
 		width: fit-content;
 		padding-bottom: 0.6rem;
@@ -21,18 +26,17 @@ export const StyledContainer = styled.div`
 	.div_card {
 		width: 20.1rem;
 		height: auto;
-		border: 1.5px solid whitesmoke;
+		border: 1.5px solid ${({theme}) => theme.border};
 		display: flex;
 		flex-direction: column;
 		place-items: center;
-		background: #fdfeff;
+		background: ${({theme}) => theme.card};
 		border-radius: 0.455rem;
 		padding: 0.909rem 0 0.5rem 0;
 		box-shadow: 0 0.091rem 0.227rem rgba(0, 0, 0, 0.075);
 		-webkit-box-shadow: 0 0.091rem 0.227rem rgba(0, 0, 0, 0.075);
 		-moz-box-shadow: 0 0.091rem 0.227rem rgba(0, 0, 0, 0.075);
 		margin: 0 2rem 0 0;
-
 
 		.div_text {
 			margin: 0 0 0 0;
@@ -48,6 +52,7 @@ export const StyledContainer = styled.div`
 			padding-top: 0.7rem;
 			display: flex;
 			justify-content: space-around;
+
 			.span_icon {
 				font-size: 1.1rem;
 			}

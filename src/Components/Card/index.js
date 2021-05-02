@@ -1,7 +1,7 @@
 import {StyledContainer} from './styled';
 import {FiGithub, FiExternalLink} from 'react-icons/fi';
 
-const Card = ({title, description, link}) => {
+const Card = ({title, description, link, github, web}) => {
 	return (
 		<StyledContainer>
 			<div className='div_card'>
@@ -19,15 +19,18 @@ const Card = ({title, description, link}) => {
 					title={title}
 				></iframe>
 				<div className='div_icons'>
-					<span className='span_icon'>
-						<FiGithub />
-						<span> GitHub</span>
-					</span>
-
-					<span className='span_icon'>
-						<FiExternalLink />
-						<span> Web</span>
-					</span>
+					<a href={github} target='_blank' rel='noreferrer'>
+						<span className='span_icon'>
+							<FiGithub />
+							<span> GitHub</span>
+						</span>
+					</a>
+					<a href={web} target='_blank' rel='noreferrer'>
+						<span className='span_icon'>
+							<FiExternalLink />
+							<span> Web</span>
+						</span>
+					</a>
 				</div>
 			</div>
 		</StyledContainer>

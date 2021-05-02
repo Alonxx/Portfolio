@@ -25,15 +25,6 @@ export const StyledContainer = styled.div`
 		font-size: 2rem;
 	}
 
-	.div_component_open {
-		margin-left: 0rem;
-		font-size: 2rem;
-		font-weight: 900;
-		color: rgb(225, 170, 99, 1);
-		span {
-			color: rgba(0, 0, 0, 1);
-		}
-	}
 
 	.div_project_container {
 		display: flex;
@@ -58,12 +49,6 @@ export const StyledContainer = styled.div`
 			margin-left: 0rem;
 			padding-bottom: 2rem;
 			padding-left: 0.5rem;
-			font-size: 2rem;
-			font-weight: 900;
-			color: rgb(225, 170, 99, 1);
-			span {
-				color: rgba(0, 0, 0, 1);
-			}
 		}
 
 		.div_project_container {

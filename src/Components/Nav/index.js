@@ -1,11 +1,24 @@
 import {StyledContainer} from './styled';
-const Nav = () => {
+
+const arrayMenu = ['About', 'Skills', 'Projects', 'Contact'];
+
+const Nav = ({themeToggler}) => {
 	return (
 		<div className='nav'>
 			<StyledContainer>
-				<h3>Nav</h3>
+				<div className='div_buttons'>
+					{arrayMenu &&
+						arrayMenu.map((el) => (
+							<div>
+								<a href={'#' + el}>{el}</a>
+							</div>
+						))}
+				</div>
+			
 			</StyledContainer>
 		</div>
 	);
 };
+
+	//<button onClick={themeToggler}>Switch Theme</button>;
 export default Nav;

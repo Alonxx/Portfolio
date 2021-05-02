@@ -25,22 +25,13 @@ export const StyledContainer = styled.div`
 		font-size: 2rem;
 	}
 
-	.div_component_open {
-		margin-left: 0rem;
-		font-size: 2rem;
-		font-weight: 900;
-		color: rgb(225, 170, 99, 1);
-		span {
-			color: rgba(0, 0, 0, 1);
-		}
-	}
 	.tooltip {
-		border: 1px solid whitesmoke;
+		border: 1px solid ${({theme}) => theme.border};
 		font-size: 0.67rem;
 		visibility: hidden;
 		width: 10rem;
-		background: #fdfeff;
-		color: black;
+		background: ${({theme}) => theme.card};
+		color: ${({theme}) => theme.text};
 		text-align: center;
 		border-radius: 6px;
 		padding: 0.5rem 0.3rem 0 0.3rem;
@@ -60,10 +51,9 @@ export const StyledContainer = styled.div`
 		}
 		i {
 			font-size: 1rem;
-
 		}
 		a {
-			color: #1c1c1c;
+			color: ${({theme}) => theme.text};
 			text-decoration: none;
 		}
 		&:after {
@@ -74,7 +64,8 @@ export const StyledContainer = styled.div`
 			margin-left: -0.5rem;
 			border-width: 0.5rem;
 			border-style: solid;
-			border-color: #fdfeff transparent transparent transparent;
+			border-color: ${({theme}) => theme.card} transparent transparent
+				transparent;
 		}
 	}
 
@@ -87,6 +78,16 @@ export const StyledContainer = styled.div`
 
 		.div_icon {
 			position: relative;
+
+			.icon_gmail {
+				color: #ca372d;
+			}
+			.icon_linkedin {
+				color: ${({theme}) => theme.icon_linkedin};
+			}
+			.icon_github {
+				color: ${({theme}) => theme.text};
+			}
 
 			&:hover .tooltip {
 				visibility: visible;
@@ -107,18 +108,13 @@ export const StyledContainer = styled.div`
 			margin-left: 0rem;
 			padding-bottom: 3rem;
 			padding-left: 0.5rem;
-			font-size: 2rem;
-			font-weight: 900;
-			color: rgb(225, 170, 99, 1);
-			span {
-				color: rgba(0, 0, 0, 1);
-			}
 		}
 		.tooltip {
+			border: 1px solid ${({theme}) => theme.border};
 			visibility: hidden;
 			font-size: 0.7rem;
-			background: #fdfeff;
-			color: black;
+			background: ${({theme}) => theme.card};
+			color: ${({theme}) => theme.text};
 			text-align: center;
 			border-radius: 6px;
 			padding: 0.5rem 0.1rem 0 0.1rem;
@@ -140,7 +136,7 @@ export const StyledContainer = styled.div`
 				font-size: 1.3rem;
 			}
 			a {
-				color: #1c1c1c;
+				color: ${({theme}) => theme.text};
 				text-decoration: none;
 			}
 			&:after {

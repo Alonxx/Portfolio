@@ -10,10 +10,11 @@ const arrayContact = [
 		icon: SiGmail,
 		image: img_gmail,
 		text: 'alonsodiazlip@gmail.com',
+		text2: null,
 		action: 'copy',
 		link: 'mailto: alonsodiazlip@gmail.com',
 		inIcon: FiMail,
-		color: '#ca372d',
+		className: 'icon_gmail',
 	},
 	{
 		icon: FaLinkedin,
@@ -23,22 +24,23 @@ const arrayContact = [
 		action: 'link',
 		link: 'https://www.linkedin.com/in/alonsojesusdiaz/',
 		inIcon: FiExternalLink,
-		color: '#0a66c2',
+		className: 'icon_linkedin',
 	},
 	{
 		icon: FaGithub,
 		image: img_gmail,
 		text: '@Alonxx',
+		text2: null,
 		action: 'link',
 		link: 'https://github.com/Alonxx/',
 		inIcon: FiExternalLink,
-		color: '#1c1c1c',
+		className: 'icon_github',
 	},
 ];
 
 const Contact = () => {
 	return (
-		<div className='contact'>
+		<div id='Contact' className='contact'>
 			<StyledContainer>
 				<div className='title'>
 					<div className='div_component_open'>
@@ -49,7 +51,7 @@ const Contact = () => {
 					<div className='div_contact'>
 						{arrayContact.map((el) => (
 							<div className='div_icon'>
-								<el.icon style={{color: el.color}} />
+								<el.icon className={el.className} />
 								<div className='tooltip'>
 									<img
 										className='img_perfil'
@@ -59,7 +61,7 @@ const Contact = () => {
 									<br />
 									<span>
 										{el.text}
-										<br/>
+										<br />
 										{el.text2 !== null ? el.text2 : null}
 									</span>
 									<br />

@@ -30,7 +30,7 @@ const arrayBack = [
 
 const Skills = () => {
 	return (
-		<div className='skills'>
+		<div id='Skills' className='skills'>
 			<StyledContainer>
 				<div className='title'>
 					<div className='div_component_open'>

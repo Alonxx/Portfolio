@@ -6,19 +6,33 @@ export const GlobalStyles = createGlobalStyle`
   list-style: none;  
   box-sizing: border-box; }
 
+  	.div_component_open {
+		margin-left: 0rem;
+		padding-bottom: 2rem;
+		font-size: 2rem;
+		font-weight: 900;
+		color: ${({theme}) => theme.component};
+		span {
+			color: ${({theme}) => theme.text};
+		}
+	}
+
   body {
     min-height: 100vh;
-    background: #f3f8f9;
-    color: #1c1c1c;
+    background: ${({theme}) => theme.body};
+    color: ${({theme}) => theme.text};
+    //transition: all 0.50s linear;
 
   }
 html {
   font-size: 24px;
+  scroll-behavior: smooth;
 }
 
 @media (max-width: 1921px) {
   html {
     font-size: 22px;
+
   }
 }
 

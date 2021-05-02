@@ -3,7 +3,7 @@ export const StyledContainer = styled.div`
 	width: 99vw;
 	height: fit-content;
 	display: grid;
-	padding-top: 5rem;
+	padding-top: 4rem;
 	grid-template-areas:
 		'header header'
 		'photo about '
@@ -23,15 +23,7 @@ export const StyledContainer = styled.div`
 	}
 
 	.div_component_open {
-		margin-left: 0rem;
-		padding-bottom: 3rem;
 		padding-left: 16rem;
-		font-size: 2rem;
-		font-weight: 900;
-		color: rgb(225, 170, 99, 1);
-		span {
-			color: rgba(0, 0, 0, 1);
-		}
 	}
 
 	.div_avatar {
@@ -82,14 +74,6 @@ export const StyledContainer = styled.div`
 				color: #4188cf;
 			}
 		}
-
-		.div_component_close {
-			width: 100%;
-			font-size: 0.9rem;
-			font-weight: 900;
-			color: rgba(0, 0, 0, 0.7);
-			text-align: right;
-		}
 	}
 
 	@media screen and (max-width: 719px) {
@@ -109,12 +93,6 @@ export const StyledContainer = styled.div`
 			margin-left: 0rem;
 			padding-bottom: 2rem;
 			padding-left: 0.5rem;
-			font-size: 2rem;
-			font-weight: 900;
-			color: rgb(225, 170, 99, 1);
-			span {
-				color: rgba(0, 0, 0, 1);
-			}
 		}
 
 		.div_avatar {
