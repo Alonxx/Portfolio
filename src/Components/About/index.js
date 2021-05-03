@@ -42,14 +42,14 @@ const About = () => {
 							data-aos-once='true'
 						>
 							<div className='div_greetings'>
-								<h2>¡Hey! Aqui Alonso Diaz 👋</h2>
+								<h2>¡Hey! here Alonso Diaz 👋</h2>
 								<div className='div_hr'>
 									<hr></hr>
 								</div>
 							</div>
 							<div className='div_title'>
 								<span className='span_about'>
-									Soy <span className='span_title'>Full Stack Developer</span>.
+									I'm <span className='span_title'>Full Stack Developer</span>.
 								</span>
 							</div>
 						</div>
@@ -62,11 +62,11 @@ const About = () => {
 						>
 							<div className='div_description'>
 								<span>
-									Amante de las finanzas e inversiones 📈 y resido actualmente
-									en Argentina 🇦🇷.
-									<br /> Me encantan los retos, adaptarme a los cambios,
-									trabajar en equipo, y mantenerme en{' '}
-									<span className='span_mode'>#ModoEstudianteSiempre📚</span>
+									Lover of finances and investments 📈 and I currently reside in
+									Argentina 🇦🇷.
+									<br /> I love challenges, adapt to changes, work as a team,
+									and stay in{' '}
+									<span className='span_mode'>#StudentModeAlways📚</span>
 								</span>
 							</div>
 						</div>

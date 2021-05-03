@@ -10,8 +10,8 @@ import Card from '../Card/index';
 const myProjects = [
 	{
 		title: 'Pokemon Companion App',
-		description: `Aplicacion web para buscar, obtener informacion y agrear Pokemons.
-        Creada con React.js, Redux, Express, Sequelize, PostgreSQL.`,
+		description: `Web application to search, obtain information and add Pokemons.
+        Created with React.js, Redux, Express, Sequelize, PostgreSQL.`,
 		link:
 			'https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6792079534683410432?compact=1',
 		github: 'https://github.com/Alonxx/Pokemon-Companion-App',
@@ -20,7 +20,7 @@ const myProjects = [
 	{
 		title: 'The Quizz App',
 		description:
-			'Aplicacion web de juego de trivia. Creada con React.js consumiendo datos de una API publica.',
+			'Trivia game web application. Created with React.js consuming data from a public API.',
 		link:
 			'https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6792576405097062400?compact=1',
 		github: 'https://github.com/Alonxx/quizzapp',

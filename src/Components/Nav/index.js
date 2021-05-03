@@ -14,7 +14,7 @@ const Nav = ({themeToggler}) => {
 							</div>
 						))}
 				</div>
-			
+				<button onClick={themeToggler}>Switch Theme</button>
 			</StyledContainer>
 		</div>
 	);
