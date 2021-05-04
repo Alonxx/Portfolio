@@ -33,6 +33,7 @@ export const StyledContainer = styled.div`
 
 		.img_avatar {
 			border-radius: 15px;
+			width: 426px;
 		}
 		.img_avatar2 {
 			display: none;
