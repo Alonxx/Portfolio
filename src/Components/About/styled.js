@@ -33,7 +33,7 @@ export const StyledContainer = styled.div`
 
 		.img_avatar {
 			border-radius: 15px;
-			width: 426px;
+			width: 19.364rem;
 		}
 		.img_avatar2 {
 			display: none;
@@ -92,7 +92,7 @@ export const StyledContainer = styled.div`
 
 		.div_component_open {
 			margin-left: 0rem;
-			padding-bottom: 2rem;
+			padding-bottom: 1rem;
 			padding-left: 0.5rem;
 		}
 
