@@ -25,7 +25,6 @@ export const StyledContainer = styled.div`
 		justify-self: center;
 	}
 
-
 	.div_title {
 		font-size: 2rem;
 	}

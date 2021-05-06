@@ -77,6 +77,7 @@ export const StyledContainer = styled.div`
 		}
 	}
 
+
 	@media screen and (max-width: 719px) {
 		grid-template-areas:
 			'header'
@@ -143,10 +144,6 @@ export const StyledContainer = styled.div`
 			}
 			.div_description {
 				padding-left: 0.8rem;
-			}
-
-			.div_component_close {
-				width: 95%;
 			}
 		}
 	}

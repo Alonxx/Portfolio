@@ -30,6 +30,15 @@ export const StyledContainer = styled.div`
 		.div_switch {
 		}
 	}
+
+	@media (min-width: 720px) and (max-width: 1126px) {
+		.div_container {
+			.div_buttons {
+				margin-left: 8rem;
+			}
+		}
+	}
+
 	@media screen and (max-width: 719px) {
 		overflow: hidden;
 		.div_container {

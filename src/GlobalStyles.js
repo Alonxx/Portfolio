@@ -6,7 +6,7 @@ export const GlobalStyles = createGlobalStyle`
   list-style: none;  
   box-sizing: border-box; }
 
-  	.div_component_open {
+.div_component_open {
 		margin-left: 0rem;
 		padding-bottom: 2rem;
 		font-size: 2rem;
@@ -42,9 +42,25 @@ html {
   }
 }
 
-@media (max-width: 1025px) {
+
+
+@media (max-width: 1127px) {
   html {
     font-size: 18px;
+    		.div_component_open {
+			margin-left: -6rem;
+		}
+
+  }
+}
+
+ @media (min-width: 720px) and (max-width: 1126px){
+  html {
+    font-size: 13.5px;
+    		.div_component_open {
+			margin-left: -10rem;
+		}
+
   }
 }
 
