@@ -12,9 +12,10 @@ const myProjects = [
 		title: 'Pokemon Companion App',
 		description: `Web application to search, obtain information and add Pokemons.
         Created with React.js, Redux, Express, Sequelize, PostgreSQL.`,
-		link: 'https://pokemon-companion-app.herokuapp.com/',
+		link:
+			'https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6792079534683410432?compact=1',
 		github: 'https://github.com/Alonxx/Pokemon-Companion-App',
-		web: 'https://github.com/Alonxx/Pokemon-Companion-App',
+		web: 'https://pokemon-companion-app.herokuapp.com/',
 	},
 	{
 		title: 'The Quizz App',
