@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.fc0f2fed.chunk.css",
-    "main.js": "/static/js/main.41d66cc0.chunk.js",
-    "main.js.map": "/static/js/main.41d66cc0.chunk.js.map",
+    "main.js": "/static/js/main.0d387ece.chunk.js",
+    "main.js.map": "/static/js/main.0d387ece.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.06b5035f.js",
     "runtime-main.js.map": "/static/js/runtime-main.06b5035f.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/static/css/2.7fc9bc2b.chunk.css",
@@ -19,8 +19,7 @@
     "static/media/linkedin.f78fb0f9.png": "/static/media/linkedin.f78fb0f9.png",
     "static/media/mongodb.0368dd10.svg": "/static/media/mongodb.0368dd10.svg",
     "static/media/node.502737ea.svg": "/static/media/node.502737ea.svg",
-    "static/media/perfil.791735c0.png": "/static/media/perfil.791735c0.png",
-    "static/media/perfilmobile.b5e49452.png": "/static/media/perfilmobile.b5e49452.png",
+    "static/media/perfil.a6a57cee.png": "/static/media/perfil.a6a57cee.png",
     "static/media/postgresql.b215fdee.svg": "/static/media/postgresql.b215fdee.svg",
     "static/media/react.6c1d44b8.svg": "/static/media/react.6c1d44b8.svg",
     "static/media/redux.71eb13e2.svg": "/static/media/redux.71eb13e2.svg",
@@ -32,6 +31,6 @@
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.eb021c27.chunk.js",
     "static/css/main.fc0f2fed.chunk.css",
-    "static/js/main.41d66cc0.chunk.js"
+    "static/js/main.0d387ece.chunk.js"
   ]
 }
