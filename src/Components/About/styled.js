@@ -56,7 +56,7 @@ export const StyledContainer = styled.div`
 			}
 		}
 		.div_title {
-			padding-bottom: 3rem;
+			padding-bottom: 2.5rem;
 			.span_about {
 				line-height: 5rem;
 				font-weight: 900;
@@ -76,7 +76,6 @@ export const StyledContainer = styled.div`
 			}
 		}
 	}
-
 
 	@media screen and (max-width: 719px) {
 		grid-template-areas:

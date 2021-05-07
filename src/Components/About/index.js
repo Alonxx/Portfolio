@@ -71,10 +71,12 @@ const About = () => {
 					>
 						<div className='div_description'>
 							<span>
-								Lover of finances and investments 📈 and I currently reside in
-								Argentina 🇦🇷.
-								<br /> I love challenges, adapt to changes, work as a team, and
-								stay in <span className='span_mode'>#StudentModeAlways📚</span>
+								Finances and investments lover 📈 living in Argentina 🇦🇷
+								<br />
+								<br />
+								I'm a team player that likes challenges and adapts to
+								changes.&nbsp;&nbsp;
+								<span className='span_mode'>#StudentModeAlways📚</span>
 							</span>
 						</div>
 					</div>
