@@ -58,7 +58,7 @@ const About = () => {
 						</div>
 						<div className='div_title'>
 							<span className='span_about'>
-								I'm a<span className='span_title'>Full Stack Developer</span>.
+								I'm<span className='span_title'>Full Stack Developer</span>.
 							</span>
 						</div>
 					</div>
