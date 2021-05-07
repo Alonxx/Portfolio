@@ -105,6 +105,7 @@ export const StyledContainer = styled.div`
 				display: block;
 				width: 120px;
 				height: auto;
+
 				border-radius: 100%;
 			}
 		}

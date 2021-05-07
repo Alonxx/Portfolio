@@ -2,7 +2,7 @@ import {StyledContainer} from './styled';
 import {FaGithub, FaLinkedin} from 'react-icons/fa';
 import {FiExternalLink, FiMail} from 'react-icons/fi';
 import {SiGmail} from 'react-icons/si';
-import img_gmail from '../../assets/perfil.png';
+import img_gmail from '../../assets/linkedin.png';
 import img_linkedin from '../../assets/linkedin.png';
 
 const arrayContact = [
