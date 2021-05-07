@@ -58,7 +58,7 @@ const About = () => {
 						</div>
 						<div className='div_title'>
 							<span className='span_about'>
-								I'm <span className='span_title'>Full Stack Developer</span>.
+								I'm a<span className='span_title'>Full Stack Developer</span>.
 							</span>
 						</div>
 					</div>
@@ -74,7 +74,7 @@ const About = () => {
 								Finances and investments lover 📈 living in Argentina 🇦🇷
 								<br />
 								<br />
-								I'm a team player that likes challenges and adapts to
+								I'm a team player who likes challenges and adapts to
 								changes.&nbsp;&nbsp;
 								<span className='span_mode'>#StudentModeAlways📚</span>
 							</span>
