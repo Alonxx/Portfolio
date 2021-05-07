@@ -2,7 +2,6 @@ import React, {useEffect} from 'react';
 import {StyledContainer} from './styled';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Skeleton from 'react-loading-skeleton';
 import Card from '../Card/index';
 
 /* PASAR A UTILS */

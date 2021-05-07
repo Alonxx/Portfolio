@@ -5,6 +5,9 @@ import {
 	CheckBox,
 } from './styled';
 
+import {CgSun} from 'react-icons/cg';
+import {BiMoon} from 'react-icons/bi'
+
 const arrayMenu = ['About', 'Skills', 'Projects', 'Contact'];
 
 const Nav = ({themeToggler, theme}) => {
@@ -21,6 +24,9 @@ const Nav = ({themeToggler, theme}) => {
 							))}
 					</div>
 					<div className='div_switch'>
+							<span>
+								<CgSun />
+							</span>
 						<CheckBoxWrapper>
 							<CheckBox
 								id='checkbox'
@@ -31,6 +37,9 @@ const Nav = ({themeToggler, theme}) => {
 
 							<CheckBoxLabel htmlFor='checkbox' />
 						</CheckBoxWrapper>
+							<span>
+								<BiMoon />
+							</span>
 					</div>
 				</div>
 			</StyledContainer>

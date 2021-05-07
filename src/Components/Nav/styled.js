@@ -28,6 +28,12 @@ export const StyledContainer = styled.div`
 			justify-content: space-between;
 		}
 		.div_switch {
+			width: 7%;
+			display: flex;
+			justify-content: space-between;
+			span {
+				margin-top: 4px;
+			}
 		}
 	}
 
@@ -35,6 +41,14 @@ export const StyledContainer = styled.div`
 		.div_container {
 			.div_buttons {
 				margin-left: 8rem;
+			}
+			.div_switch {
+				width: 14%;
+				display: flex;
+				justify-content: space-around;
+				span {
+					margin-top: 10px;
+				}
 			}
 		}
 	}
@@ -51,9 +65,13 @@ export const StyledContainer = styled.div`
 				justify-content: space-between;
 			}
 			.div_switch {
+				width: 12%;
 				position: relative;
 				left: 3%;
 				top: 6%;
+				span {
+					display: none;
+				}
 			}
 		}
 	}
@@ -62,6 +80,8 @@ export const StyledContainer = styled.div`
 export const CheckBoxWrapper = styled.div`
 	margin-top: 4px;
 	position: relative;
+	span {
+	}
 	@media screen and (max-width: 719px) {
 		margin-top: 0;
 	}

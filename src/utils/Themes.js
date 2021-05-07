@@ -7,6 +7,7 @@ export const lightTheme = {
 	border: 'whitesmoke',
 	icon_linkedin: '#0a66c2',
 };
+
 export const darkTheme = {
 	body: '#0d1117',
 	text: '#eaeaeb',
