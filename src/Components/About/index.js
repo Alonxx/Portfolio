@@ -3,7 +3,7 @@ import {StyledContainer} from './styled';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import img from '../../assets/perfil.png';
-import img2 from '../../assets/perfilmobile.png';
+import img2 from '../../assets/linkedin.png';
 const About = () => {
 	useEffect(() => {
 		AOS.init({});
@@ -42,7 +42,7 @@ const About = () => {
 							data-aos-once='true'
 						>
 							<div className='div_greetings'>
-								<h2>¡Hey! here Alonso Diaz 👋</h2>
+								<h2>Hey! here Alonso Diaz 👋</h2>
 								<div className='div_hr'>
 									<hr></hr>
 								</div>
