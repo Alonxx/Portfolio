@@ -2,8 +2,10 @@ import {StyledContainer} from './styled';
 import {FaGithub, FaLinkedin} from 'react-icons/fa';
 import {FiExternalLink, FiMail} from 'react-icons/fi';
 import {SiGmail} from 'react-icons/si';
+import {BiBookContent, BiDownload} from 'react-icons/bi';
 import img_gmail from '../../assets/linkedin.png';
 import img_linkedin from '../../assets/linkedin.png';
+import img_pdf from '../../assets/pdf.png';
 
 const arrayContact = [
 	{
@@ -36,6 +38,16 @@ const arrayContact = [
 		inIcon: FiExternalLink,
 		className: 'icon_github',
 	},
+	{
+		icon: BiBookContent,
+		image: img_gmail,
+		text: 'Resume',
+		text2: null,
+		action: 'link',
+		link: 'AlonsoDiaz-CV.pdf',
+		inIcon: BiDownload,
+		className: 'icon_github',
+	},
 ];
 
 const Contact = () => {
@@ -66,7 +78,12 @@ const Contact = () => {
 									</span>
 									<br />
 									<i>
-										<a href={el.link} target='_blank' rel='noreferrer'>
+										<a
+											href={el.link}
+											download={el.inIcon === BiDownload ? true : false}
+											target='_blank'
+											rel='noreferrer'
+										>
 											<el.inIcon />
 										</a>
 									</i>
