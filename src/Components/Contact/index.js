@@ -38,7 +38,7 @@ const arrayContact = [
 		inIcon: FiExternalLink,
 		className: 'icon_github',
 	},
-	{
+	/* 	{
 		icon: BiBookContent,
 		image: img_gmail,
 		text: 'Resume',
@@ -47,7 +47,7 @@ const arrayContact = [
 		link: 'AlonsoDiaz-CV.pdf',
 		inIcon: BiDownload,
 		className: 'icon_github',
-	},
+	}, */
 ];
 
 const Contact = () => {
@@ -78,12 +78,7 @@ const Contact = () => {
 									</span>
 									<br />
 									<i>
-										<a
-											href={el.link}
-											download={el.inIcon === BiDownload ? true : false}
-											target='_blank'
-											rel='noreferrer'
-										>
+										<a href={el.link} target='_blank' rel='noreferrer'>
 											<el.inIcon />
 										</a>
 									</i>
