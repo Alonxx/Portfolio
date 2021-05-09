@@ -1,7 +1,9 @@
 import {StyledContainer} from './styled';
 import {FiGithub, FiExternalLink} from 'react-icons/fi';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+import {Carousel} from 'react-responsive-carousel';
 
-const Card = ({title, description, link, github, web}) => {
+const Card = ({title, description, slider, github, web}) => {
 	return (
 		<StyledContainer>
 			<div className='div_card'>
@@ -12,12 +14,14 @@ const Card = ({title, description, link, github, web}) => {
 				<div className='div_text'>
 					<span>{description}</span>
 				</div>
-				<iframe
-					src={link}
-					frameborder='0'
-					allow='autoplay; fullscreen'
-					title={title}
-				></iframe>
+				<Carousel showThumbs={false} showStatus={false} infiniteLoop={true}>
+					{slider &&
+						slider.map((el, i) => (
+							<div key={i + Math.random()}>
+								<img src={'/images/carrousel/' + el} alt={el.title} />
+							</div>
+						))}
+				</Carousel>
 				<div className='div_icons'>
 					<a href={github} target='_blank' rel='noreferrer'>
 						<span className='span_icon'>

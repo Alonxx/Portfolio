@@ -46,8 +46,8 @@ const Skills = () => {
 								<hr></hr>
 							</div>
 							<div className='div_frontend'>
-								{arrayFront.map((el) => (
-									<div>
+								{arrayFront.map((el, i) => (
+									<div key={i + Math.random()}>
 										<img src={el.image} alt={el.name}></img>
 										<h3>{el.name}</h3>
 									</div>
@@ -62,8 +62,8 @@ const Skills = () => {
 								<hr></hr>
 							</div>
 							<div className='div_backend'>
-								{arrayBack.map((el) => (
-									<div>
+								{arrayBack.map((el, i) => (
+									<div key={i + Math.random()}>
 										<img src={el.image} alt={el.name}></img>
 										<h3>{el.name}</h3>
 									</div>

@@ -60,14 +60,14 @@ const Contact = () => {
 				</div>
 				<div className='content'>
 					<div className='div_contact'>
-						{arrayContact.map((el) => (
-							<div className='div_icon'>
+						{arrayContact.map((el, i) => (
+							<div key={i + Math.random()} className='div_icon'>
 								<el.icon className={el.className} />
 								<div className='tooltip'>
 									<img
 										className='img_perfil'
 										src={el.image}
-										alt={el.icon}
+										alt={el.className}
 									></img>
 									<br />
 									<span>

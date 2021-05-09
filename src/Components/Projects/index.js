@@ -11,8 +11,12 @@ const myProjects = [
 		title: 'Pokemon Companion App',
 		description: `Web application to search, obtain information and add Pokemons.
         Created with React.js, Redux, Express, Sequelize, PostgreSQL.`,
-		link:
-			'https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6792079534683410432?compact=1',
+		slider: [
+			'pokemonapp/ladingpage.png',
+			'pokemonapp/home.png',
+			'pokemonapp/detail.png',
+			'pokemonapp/create.png',
+		],
 		github: 'https://github.com/Alonxx/Pokemon-Companion-App',
 		web: 'https://pokemon-companion-app.herokuapp.com/',
 	},
@@ -20,8 +24,12 @@ const myProjects = [
 		title: 'The Quizz App',
 		description:
 			'Trivia game web application. Created with React.js consuming data from a public API.',
-		link:
-			'https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6792576405097062400?compact=1',
+		slider: [
+			'thequizzapp/home.png',
+			'thequizzapp/quizz.png',
+			'thequizzapp/correct.png',
+			'thequizzapp/incorrect.png',
+		],
 		github: 'https://github.com/Alonxx/quizzapp',
 		web: 'https://alonxx.github.io/quizzapp/',
 	},
@@ -45,9 +53,10 @@ const Projects = () => {
 						{myProjects &&
 							myProjects.map((el, i) => (
 								<Card
+									key={i + Math.random()}
 									title={el.title}
 									description={el.description}
-									link={el.link}
+									slider={el.slider}
 									github={el.github}
 									web={el.web}
 								/>

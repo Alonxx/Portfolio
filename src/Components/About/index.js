@@ -4,8 +4,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import img from '../../assets/perfil.png';
 import img2 from '../../assets/linkedin.png';
-import {TiArrowDownOutline} from 'react-icons/ti'
-
 
 const About = () => {
 	useEffect(() => {
@@ -31,18 +29,8 @@ const About = () => {
 						data-aos-duration='800'
 						data-aos-once='true'
 					>
-						<img
-							loading='lazy'
-							className='img_avatar'
-							src={img}
-							alt='perfil'
-						></img>
-						<img
-							loading='lazy'
-							className='img_avatar2'
-							src={img2}
-							alt='perfil'
-						></img>
+						<img className='img_avatar' src={img} alt='perfil desktop'></img>
+						<img className='img_avatar2' src={img2} alt='perfil mobile'></img>
 					</div>
 				</div>
 

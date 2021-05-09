@@ -18,7 +18,7 @@ const Nav = ({themeToggler, theme}) => {
 					<div className='div_buttons'>
 						{arrayMenu &&
 							arrayMenu.map((el) => (
-								<div className='div_link'>
+								<div className='div_link' key={el}>
 									<a href={'#' + el}>{el}</a>
 								</div>
 							))}
@@ -32,7 +32,7 @@ const Nav = ({themeToggler, theme}) => {
 								id='checkbox'
 								type='checkbox'
 								onClick={themeToggler}
-								checked={theme === 'dark' ? true : false}
+								defaultChecked={theme === 'dark' ? true : false}
 							/>
 
 							<CheckBoxLabel htmlFor='checkbox' />
