@@ -6,7 +6,7 @@ import {
 } from './styled';
 
 import {CgSun} from 'react-icons/cg';
-import {BiMoon} from 'react-icons/bi'
+import {BiMoon} from 'react-icons/bi';
 
 const arrayMenu = ['About', 'Skills', 'Projects', 'Contact'];
 
@@ -18,15 +18,15 @@ const Nav = ({themeToggler, theme}) => {
 					<div className='div_buttons'>
 						{arrayMenu &&
 							arrayMenu.map((el) => (
-								<div>
+								<div className='div_link'>
 									<a href={'#' + el}>{el}</a>
 								</div>
 							))}
 					</div>
 					<div className='div_switch'>
-							<span>
-								<CgSun />
-							</span>
+						<span>
+							<CgSun style={theme !== 'dark' ? {color: 'orange'} : false} />
+						</span>
 						<CheckBoxWrapper>
 							<CheckBox
 								id='checkbox'
@@ -37,9 +37,9 @@ const Nav = ({themeToggler, theme}) => {
 
 							<CheckBoxLabel htmlFor='checkbox' />
 						</CheckBoxWrapper>
-							<span>
-								<BiMoon />
-							</span>
+						<span>
+							<BiMoon style={theme === 'dark' ? {color: 'orange'} : false} />
+						</span>
 					</div>
 				</div>
 			</StyledContainer>

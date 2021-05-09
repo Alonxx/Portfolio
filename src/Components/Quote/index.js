@@ -1,7 +1,6 @@
 import axios from 'axios';
 import React, {useEffect, useState} from 'react';
 import {StyledContainer} from './styled';
-import {BsChatQuoteFill} from 'react-icons/bs';
 
 const Quote = () => {
 	const [Result, SetResult] = useState([]);

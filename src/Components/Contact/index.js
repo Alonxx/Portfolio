@@ -2,10 +2,9 @@ import {StyledContainer} from './styled';
 import {FaGithub, FaLinkedin} from 'react-icons/fa';
 import {FiExternalLink, FiMail} from 'react-icons/fi';
 import {SiGmail} from 'react-icons/si';
-import {BiBookContent, BiDownload} from 'react-icons/bi';
+import {RiArrowRightSLine} from 'react-icons/ri';
 import img_gmail from '../../assets/linkedin.png';
 import img_linkedin from '../../assets/linkedin.png';
-import img_pdf from '../../assets/pdf.png';
 
 const arrayContact = [
 	{
@@ -79,6 +78,7 @@ const Contact = () => {
 									<br />
 									<i>
 										<a href={el.link} target='_blank' rel='noreferrer'>
+											<RiArrowRightSLine className='arrow' />
 											<el.inIcon />
 										</a>
 									</i>

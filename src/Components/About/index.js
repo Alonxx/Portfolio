@@ -4,6 +4,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import img from '../../assets/perfil.png';
 import img2 from '../../assets/linkedin.png';
+import {TiArrowDownOutline} from 'react-icons/ti'
+
+
 const About = () => {
 	useEffect(() => {
 		AOS.init({});

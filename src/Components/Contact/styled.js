@@ -50,7 +50,13 @@ export const StyledContainer = styled.div`
 			border-radius: 100%;
 		}
 		i {
+			text-align: center;
+			font-size: 1.3rem;
+		}
+		.arrow {
 			font-size: 1rem;
+			margin-left: -0.9rem;
+			animation: bounce 2s infinite;
 		}
 		a {
 			color: ${({theme}) => theme.text};
@@ -78,6 +84,10 @@ export const StyledContainer = styled.div`
 
 		.div_icon {
 			position: relative;
+			&:hover {
+				cursor: pointer;
+				transform: translateY(-0.3rem);
+			}
 
 			.icon_gmail {
 				color: #ca372d;
@@ -93,6 +103,21 @@ export const StyledContainer = styled.div`
 				visibility: visible;
 				opacity: 1;
 			}
+		}
+	}
+	@keyframes bounce {
+		0%,
+		20%,
+		50%,
+		80%,
+		100% {
+			transform: translateX(0);
+		}
+		40% {
+			transform: translateX(-20px);
+		}
+		60% {
+			transform: translateX(-15px);
 		}
 	}
 

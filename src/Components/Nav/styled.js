@@ -26,6 +26,12 @@ export const StyledContainer = styled.div`
 			width: 40%;
 			display: flex;
 			justify-content: space-between;
+
+			.div_link {
+				&:hover {
+					transform: translateY(-0.1rem);
+				}
+			}
 		}
 		.div_switch {
 			width: 7%;

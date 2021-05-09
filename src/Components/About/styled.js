@@ -22,6 +22,12 @@ export const StyledContainer = styled.div`
 		grid-area: header;
 	}
 
+	.footer {
+		grid-area: footer;
+		text-align: center;
+		margin-top: 3rem;
+	}
+
 	.div_component_open {
 		padding-left: 16rem;
 	}
@@ -76,6 +82,8 @@ export const StyledContainer = styled.div`
 			}
 		}
 	}
+
+
 
 	@media screen and (max-width: 719px) {
 		grid-template-areas:
