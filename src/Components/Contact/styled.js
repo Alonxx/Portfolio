@@ -172,7 +172,8 @@ export const StyledContainer = styled.div`
 				margin-left: -0.5rem;
 				border-width: 0.5rem;
 				border-style: solid;
-				border-color: #fdfeff transparent transparent transparent;
+				border-color: ${({theme}) => theme.card} transparent transparent
+					transparent;
 			}
 		}
 		.div_contact {

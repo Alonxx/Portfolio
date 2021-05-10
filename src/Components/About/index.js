@@ -1,5 +1,7 @@
 import React, {useEffect} from 'react';
 import {StyledContainer} from './styled';
+import ReactPlaceholder from 'react-placeholder';
+import 'react-placeholder/lib/reactPlaceholder.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import img from '../../assets/perfil.png';
