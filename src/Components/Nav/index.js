@@ -47,5 +47,4 @@ const Nav = ({themeToggler, theme}) => {
 	);
 };
 
-//<button onClick={themeToggler}>Switch Theme</button>;
 export default Nav;

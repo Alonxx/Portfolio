@@ -56,7 +56,7 @@ export const StyledContainer = styled.div`
 		.arrow {
 			font-size: 1rem;
 			margin-left: -0.9rem;
-			animation: bounce 2s infinite;
+			animation: bounce 0.5s infinite alternate ease-in-out;
 		}
 		a {
 			color: ${({theme}) => theme.text};
@@ -106,18 +106,11 @@ export const StyledContainer = styled.div`
 		}
 	}
 	@keyframes bounce {
-		0%,
-		20%,
-		50%,
-		80%,
-		100% {
+		0% {
 			transform: translateX(0);
 		}
-		40% {
-			transform: translateX(-20px);
-		}
-		60% {
-			transform: translateX(-15px);
+		100% {
+			transform: translateX(-0.4rem);
 		}
 	}
 
