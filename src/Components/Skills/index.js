@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {StyledContainer} from './styled';
 import JS from '../../assets/JS.svg';
 import react from '../../assets/react.svg';
@@ -12,31 +12,44 @@ import css from '../../assets/css.svg';
 import express from '../../assets/expressjs.svg';
 import mongodb from '../../assets/mongodb.svg';
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
 const arrayFront = [
-	{image: html, name: 'HTML'},
-	{image: css, name: 'CSS'},
-	{image: JS, name: 'JS'},
-	{image: react, name: 'React.js'},
-	{image: redux, name: 'Redux'},
-	{image: tailwind, name: 'Tailwind CSS'},
+	{image: html, name: 'HTML', link: 'https://en.wikipedia.org/wiki/HTML'},
+	{
+		image: css,
+		name: 'CSS',
+		link: 'https://www.w3.org/Style/CSS/Overview.en.html',
+	},
+	{
+		image: JS,
+		name: 'JS',
+		link: 'https://www.javascript.com/',
+	},
+	{
+		image: react,
+		name: 'React.js',
+		link: 'https://es.reactjs.org/',
+	},
+	{
+		image: redux,
+		name: 'Redux',
+		link: 'https://es.redux.js.org/',
+	},
+	{
+		image: tailwind,
+		name: 'Tailwind CSS',
+		link: 'https://tailwindcss.com/',
+	},
 ];
 
 const arrayBack = [
-	{image: node, name: 'Node.js'},
-	{image: express, name: 'Express.js'},
-	{image: postgresql, name: 'PostgreSQL'},
-	{image: sequelize, name: 'Sequelize'},
-	{image: mongodb, name: 'MongoDB'},
+	{image: node, name: 'Node.js', link: 'https://nodejs.org/es/'},
+	{image: express, name: 'Express.js', link: 'https://expressjs.com'},
+	{image: postgresql, name: 'PostgreSQL', link: 'https://www.postgresql.org/'},
+	{image: sequelize, name: 'Sequelize', link: 'https://sequelize.org/'},
+	{image: mongodb, name: 'MongoDB', link: 'https://www.mongodb.com/'},
 ];
 
 const Skills = () => {
-	useEffect(() => {
-		AOS.init({});
-	}, []);
-
 	return (
 		<div id='Skills' className='skills'>
 			<StyledContainer>
@@ -56,7 +69,9 @@ const Skills = () => {
 							<div className='div_frontend'>
 								{arrayFront.map((el, i) => (
 									<div key={i + Math.random()}>
-										<img src={el.image} alt={el.name}></img>
+										<a href={el.link} target='_blank' rel='noreferrer'>
+											<img src={el.image} alt={el.name}></img>
+										</a>
 										<h3>{el.name}</h3>
 									</div>
 								))}
@@ -72,7 +87,9 @@ const Skills = () => {
 							<div className='div_backend'>
 								{arrayBack.map((el, i) => (
 									<div key={i + Math.random()}>
-										<img src={el.image} alt={el.name}></img>
+										<a href={el.link} target='_blank' rel='noreferrer'>
+											<img src={el.image} alt={el.name}></img>
+										</a>
 										<h3>{el.name}</h3>
 									</div>
 								))}

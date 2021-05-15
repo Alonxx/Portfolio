@@ -42,6 +42,7 @@ export const StyledContainer = styled.div`
 				transform: translateY(-10px) scale(1.2);
 			}
 		}
+		
 
 		.div_skills_title {
 			width: fit-content;
