@@ -37,7 +37,12 @@ export const StyledContainer = styled.div`
 		img {
 			width: 4rem;
 			height: 4rem;
+			transition: transform 0.5s;
+			&:hover {
+				transform: translateY(-10px) scale(1.2);
+			}
 		}
+
 		.div_skills_title {
 			width: fit-content;
 			padding-bottom: 1.5rem;

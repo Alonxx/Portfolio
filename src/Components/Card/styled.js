@@ -55,6 +55,11 @@ export const StyledContainer = styled.div`
 
 			.span_icon {
 				font-size: 1.1rem;
+
+				&:hover {
+					cursor: pointer;
+					transform: translateY(-0.1rem);
+				}
 			}
 			span {
 				font-size: 0.7rem;

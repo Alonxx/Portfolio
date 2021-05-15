@@ -43,6 +43,34 @@ export const StyledContainer = styled.div`
 		}
 	}
 
+	.icon_anim {
+		animation: bouncee 2s ease;
+
+		@keyframes bouncee {
+			0% {
+				transform: scale(1, 1) translateY(0);
+			}
+			10% {
+				transform: scale(1.1, 0.9) translateY(0);
+			}
+			30% {
+				transform: scale(0.9, 1.1) translateY(-10px);
+			}
+			50% {
+				transform: scale(1.05, 0.95) translateY(0);
+			}
+			57% {
+				transform: scale(1, 1) translateY(0px);
+			}
+			64% {
+				transform: scale(1, 1) translateY(0);
+			}
+			100% {
+				transform: scale(1, 1) translateY(0);
+			}
+		}
+	}
+
 	@media (min-width: 720px) and (max-width: 1126px) {
 		.div_container {
 			.div_buttons {

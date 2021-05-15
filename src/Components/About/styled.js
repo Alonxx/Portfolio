@@ -22,12 +22,6 @@ export const StyledContainer = styled.div`
 		grid-area: header;
 	}
 
-	.footer {
-		grid-area: footer;
-		text-align: center;
-		margin-top: 3rem;
-	}
-
 	.div_component_open {
 		padding-left: 16rem;
 	}
@@ -83,20 +77,12 @@ export const StyledContainer = styled.div`
 		}
 	}
 
-
-
 	@media screen and (max-width: 719px) {
 		grid-template-areas:
 			'header'
 			'photo'
 			'about ';
 
-		.photo {
-			grid-area: photo;
-		}
-		.about {
-			grid-area: about;
-		}
 
 		.div_component_open {
 			margin-left: 0rem;
@@ -112,7 +98,6 @@ export const StyledContainer = styled.div`
 				display: block;
 				width: 120px;
 				height: auto;
-
 				border-radius: 100%;
 			}
 		}

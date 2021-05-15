@@ -1,3 +1,4 @@
+import React, {useEffect} from 'react';
 import {StyledContainer} from './styled';
 import JS from '../../assets/JS.svg';
 import react from '../../assets/react.svg';
@@ -10,6 +11,9 @@ import html from '../../assets/html.svg';
 import css from '../../assets/css.svg';
 import express from '../../assets/expressjs.svg';
 import mongodb from '../../assets/mongodb.svg';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const arrayFront = [
 	{image: html, name: 'HTML'},
@@ -29,6 +33,10 @@ const arrayBack = [
 ];
 
 const Skills = () => {
+	useEffect(() => {
+		AOS.init({});
+	}, []);
+
 	return (
 		<div id='Skills' className='skills'>
 			<StyledContainer>

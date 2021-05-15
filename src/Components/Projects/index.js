@@ -1,10 +1,7 @@
-import React, {useEffect} from 'react';
 import {StyledContainer} from './styled';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import Card from '../Card/index';
 
-/* PASAR A UTILS */
+
 
 const myProjects = [
 	{
@@ -36,16 +33,14 @@ const myProjects = [
 ];
 
 const Projects = () => {
-	useEffect(() => {
-		AOS.init();
-	}, []);
-
 	return (
 		<div id='Projects' className='projects'>
 			<StyledContainer>
 				<div className='title'>
 					<div className='div_component_open'>
-						<span>{'<'}</span>Projects &nbsp;&nbsp;<span>{'/>'} </span>
+						<span>{'<'}</span>
+						Projects &nbsp;
+						<span>{'/>'} </span>
 					</div>
 				</div>
 				<div className='project'>

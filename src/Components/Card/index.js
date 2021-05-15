@@ -24,16 +24,16 @@ const Card = ({title, description, slider, github, web}) => {
 				</Carousel>
 				<div className='div_icons'>
 					<a href={github} target='_blank' rel='noreferrer'>
-						<span className='span_icon'>
+						<div className='span_icon'>
 							<FiGithub />
 							<span> GitHub</span>
-						</span>
+						</div>
 					</a>
 					<a href={web} target='_blank' rel='noreferrer'>
-						<span className='span_icon'>
+						<div className='span_icon'>
 							<FiExternalLink />
 							<span> Web</span>
-						</span>
+						</div>
 					</a>
 				</div>
 			</div>

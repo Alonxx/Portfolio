@@ -18,7 +18,7 @@ const About = () => {
 				<div className='header'>
 					<div className='title'>
 						<div className='div_component_open'>
-							<span>{'<'}</span>About &nbsp;&nbsp;<span>{'/>'} </span>
+							<span>{'<'}</span>About &nbsp;<span>{'/>'} </span>
 						</div>
 					</div>
 				</div>

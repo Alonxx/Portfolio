@@ -55,20 +55,24 @@ const Contact = () => {
 			<StyledContainer>
 				<div className='title'>
 					<div className='div_component_open'>
-						<span>{'<'}</span>Contact&nbsp;&nbsp;<span>{'/>'} </span>
+						<span>{'<'}</span>Contact&nbsp;<span>{'/>'} </span>
 					</div>
 				</div>
 				<div className='content'>
 					<div className='div_contact'>
 						{arrayContact.map((el, i) => (
 							<div key={i + Math.random()} className='div_icon'>
-								<el.icon className={el.className} />
+								<a href={el.link} target='_blank' rel='noreferrer'>
+									<el.icon className={el.className} />
+								</a>
+
 								<div className='tooltip'>
 									<img
 										className='img_perfil'
 										src={el.image}
 										alt={el.className}
 									></img>
+
 									<br />
 									<span>
 										{el.text}

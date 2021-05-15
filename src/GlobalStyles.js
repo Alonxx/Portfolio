@@ -7,6 +7,7 @@ export const GlobalStyles = createGlobalStyle`
   box-sizing: border-box; }
 
 .div_component_open {
+
 		margin-left: 0rem;
 		padding-bottom: 2rem;
 		font-size: 2rem;

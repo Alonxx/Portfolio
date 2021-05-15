@@ -25,7 +25,10 @@ const Nav = ({themeToggler, theme}) => {
 					</div>
 					<div className='div_switch'>
 						<span>
-							<CgSun style={theme !== 'dark' ? {color: 'orange'} : false} />
+							<CgSun
+								className={theme !== 'dark' ? 'icon_anim' : false}
+								style={theme !== 'dark' ? {color: 'orange'} : false}
+							/>
 						</span>
 						<CheckBoxWrapper>
 							<CheckBox
@@ -38,7 +41,10 @@ const Nav = ({themeToggler, theme}) => {
 							<CheckBoxLabel htmlFor='checkbox' />
 						</CheckBoxWrapper>
 						<span>
-							<BiMoon style={theme === 'dark' ? {color: 'orange'} : false} />
+							<BiMoon
+								className={theme === 'dark' ? 'icon_anim' : false}
+								style={theme === 'dark' ? {color: 'orange'} : false}
+							/>
 						</span>
 					</div>
 				</div>

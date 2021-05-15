@@ -84,9 +84,10 @@ export const StyledContainer = styled.div`
 
 		.div_icon {
 			position: relative;
+			transition: all 0.5s;
 			&:hover {
 				cursor: pointer;
-				transform: translateY(-0.3rem);
+				transform: translateY(-0.5rem);
 			}
 
 			.icon_gmail {
