@@ -27,7 +27,7 @@ function App() {
 			<GridLayout>
 				<GlobalStyles />
 				<Nav themeToggler={themeToggler} theme={theme} />
-				<About />
+				<About/>
 				<Skills />
 				<Projects />
 				<Contact />

@@ -1,19 +1,13 @@
 import React, {useEffect} from 'react';
 import {StyledContainer} from './styled';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import img from '../../assets/perfil.png';
 import img2 from '../../assets/linkedin.png';
 
 const About = () => {
-	useEffect(() => {
-		AOS.init({});
-	}, []);
-
 	let media = window.matchMedia('(max-width: 719px)');
 
 	return (
-		<div id='About' className='main'>
+		<div id='About' className='main navbot'>
 			<StyledContainer>
 				<div className='header'>
 					<div className='title'>
@@ -22,12 +16,11 @@ const About = () => {
 						</div>
 					</div>
 				</div>
-				<div className='photo'>
+				<div className='photo '>
 					<div
-						className='div_avatar'
-						data-aos={media.matches ? 'fade-left' : 'fade-right'}
-						data-aos-duration='800'
-						data-aos-once='true'
+						className={
+							media.matches ? 'div_avatar fadeInRight' : 'div_avatar fadeInLeft'
+						}
 					>
 						<img className='img_avatar' src={img} alt='perfil desktop'></img>
 						<img className='img_avatar2' src={img2} alt='perfil mobile'></img>
@@ -36,10 +29,9 @@ const About = () => {
 
 				<div className='about'>
 					<div
-						className='div_about'
-						data-aos={media.matches ? 'fade-right' : 'fade-left'}
-						data-aos-duration='800'
-						data-aos-once='true'
+						className={
+							media.matches ? 'div_about fadeInLeft' : 'div_about fadeInRight'
+						}
 					>
 						<div className='div_greetings'>
 							<h2>Hey! here Alonso Diaz 👋</h2>
@@ -53,14 +45,8 @@ const About = () => {
 							</span>
 						</div>
 					</div>
-					<div
-						className='div_about '
-						data-aos='fade-up'
-						data-aos-duration='800'
-						data-aos-once='true'
-						data-aos-delay='300'
-					>
-						<div className='div_description'>
+					<div className='div_about '>
+						<div className='div_description fadeInUp'>
 							<span>
 								Finances and investments lover 📈 living in Argentina 🇦🇷
 								<br />

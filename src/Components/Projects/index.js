@@ -15,7 +15,7 @@ const myProjects = [
 			'pokemonapp/create.png',
 		],
 		github: 'https://github.com/Alonxx/Pokemon-Companion-App',
-		web: 'https://pokemon-companion-app.herokuapp.com/',
+		web: 'https://pokemon-companionapp.herokuapp.com/',
 	},
 	{
 		title: 'The Quizz App',

@@ -26,7 +26,6 @@ export const StyledContainer = styled.div`
 			width: 40%;
 			display: flex;
 			justify-content: space-between;
-
 			.div_link {
 				&:hover {
 					transform: translateY(-0.1rem);
@@ -42,10 +41,8 @@ export const StyledContainer = styled.div`
 			}
 		}
 	}
-
 	.icon_anim {
 		animation: bouncee 2s ease;
-
 		@keyframes bouncee {
 			0% {
 				transform: scale(1, 1) translateY(0);
@@ -70,7 +67,6 @@ export const StyledContainer = styled.div`
 			}
 		}
 	}
-
 	@media (min-width: 720px) and (max-width: 1126px) {
 		.div_container {
 			.div_buttons {
@@ -86,7 +82,6 @@ export const StyledContainer = styled.div`
 			}
 		}
 	}
-
 	@media screen and (max-width: 719px) {
 		overflow: hidden;
 		.div_container {

@@ -78,11 +78,11 @@ export const StyledContainer = styled.div`
 	}
 
 	@media screen and (max-width: 719px) {
+
 		grid-template-areas:
 			'header'
 			'photo'
 			'about ';
-
 
 		.div_component_open {
 			margin-left: 0rem;

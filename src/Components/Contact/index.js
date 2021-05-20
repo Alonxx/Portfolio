@@ -6,6 +6,7 @@ import {RiArrowRightSLine} from 'react-icons/ri';
 import img_gmail from '../../assets/linkedin.png';
 import img_linkedin from '../../assets/linkedin.png';
 
+
 const arrayContact = [
 	{
 		icon: SiGmail,
@@ -52,6 +53,7 @@ const arrayContact = [
 const Contact = () => {
 	return (
 		<div id='Contact' className='contact'>
+
 			<StyledContainer>
 				<div className='title'>
 					<div className='div_component_open'>
