@@ -1,9 +1,11 @@
-# Getting Started with Create React App
+This is the repository of my personal website [www.alonsodiaz.dev](https://alonsodiaz.dev)
 
 
-## Available Scripts
+## Built with
+- JavaScript
+- React.js
+- Styled-Component
+- AOS
+- React-Icons
 
-In the project directory, you can run:
-
-### `npm start`
 
